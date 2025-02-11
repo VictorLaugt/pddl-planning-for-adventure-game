@@ -1,0 +1,135 @@
+# ARCS SORTANTS PAGE 1
+feu de camp, sentier
+
+sentier, trois cairns
+
+trois cairns, puits
+trois cairns, rivière
+trois cairns, ruines
+
+puits, fond du puits: ?corde
+puits, atelier
+puits, pied du volcan
+
+fond du puits, puits
+fond du puits, ps2: ?symbole bouteille
+
+pied du volcan, mine abandonnée
+pied du volcan, rivière
+pied du volcan, puits
+pied du volcan, sommet du volcan
+
+mine abandonnée, pied du volcan
+# mine abandonnée, fond de la mine: ?roue
+
+fond de la mine, mine abandonnée
+
+porte principale, bunker: ?pelle
+porte principale, puits
+porte principale, atelier
+porte principale, jungle
+porte principale, crevasse
+
+
+# ARCS SORTANTS PAGE 2
+ps2, bunker
+
+ruines, crevasse
+
+rivière, pied du volcan
+rivière, cascade
+rivière, conduit d'aération: ?flute|violon
+
+cascade, jungle
+
+conduit d'aération, bunker: !ramper
+
+crevasse, pied du volcan
+crevasse, ruines
+
+lac, rivière
+lac, crevasse
+lac, campement des indigènes
+lac, milieu du lac: ?canne à pêche
+
+milieu du lac, lac
+
+temple maya, rivière: !courir
+temple maya, lac: ?flechette
+
+
+# ARCS SORTANTS PAGE 3
+atelier, plage
+atelier, porte principale
+atelier, jungle
+
+sommet du volcan, atelier
+sommet du volcan, cratère
+sommet du volcan, ilot des pirates: ?parapente
+
+cratère, infirmerie: !yeux bandés
+
+ilot des pirates, ps1: ?symbole coffre
+ilot des pirates, épave
+
+ps1, bunker
+
+# repère des pirates, ilot des pirates: ?rhum
+repère des pirates, cale
+
+cale, épave
+
+épave, plage: !silence
+épave, grand totem: !silence
+épave, cale
+
+plage, repère des pirates
+plage, épave
+plage, cabane du pêcheur
+plage, baobab
+
+rocher de la tortue, plage
+rocher de la tortue, repère des pirates
+rocher de la tortue, cabane du pêcheur
+rocher de la tortue, jungle
+
+cabane du pêcheur, rocher de la tortue
+cabane du pêcheur, infirmerie
+
+
+# ARCS SORTANTS PAGE 4
+jungle, porte principale
+jungle, atelier
+jungle, jungle profonde: ?machette
+jungle, temple maya
+jungle, campement des indigènes
+
+jungle profonde, jungle
+
+campement des indigènes, tipis: ?flechette
+campement des indigènes, tente du chef: !sifflotements
+
+tente du chef, grand totem
+
+tipis, atelier: !pieds liés
+tipis, infirmerie: !pieds liés
+
+grand totem, atelier: ?ration
+grand totem, rocher de la tortue: !cris
+grand totem, infirmerie: !cloche pied
+
+infirmerie, baobab
+infirmerie, jungle
+infirmerie, plage
+infirmerie, atelier
+
+baobab, jungle
+baobab, tente du chef
+baobab, cabane perchée
+
+cabane perchée, rivière
+cabane perchée, baobab
+cabane perchée, infirmerie
+cabane perchée, horizon
+
+horizon, cabane perchée

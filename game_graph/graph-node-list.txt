@@ -1,0 +1,48 @@
+# NOEUDS PAGE 1
+feu de camp: +flechette^corde^ration
+# sentier: +rhum^corde^enceinte
+sentier: +rhum^corde
+trois cairns:
+fond du puits:
+puits:
+mine abandonnée:
+# fond de la mine: +pelle
+pied du volcan: +machette
+porte principale:
+
+# NOEUDS PAGE 2
+ps2:
+bunker: !victoire
+ruines: !indices
+rivière:
+cascade: ?canne à pêche => +rhum
+conduit d'aération:
+crevasse: +rhum
+temple maya:
+lac:
+milieu du lac: +symbole bouteille
+
+# NOEUDS PAGE 3
+atelier: ?corde&voile => +parapente
+cratère: +roue
+sommet du volcan:
+plage:
+repère des pirates:
+épave: +voile
+cabane du pêcheur: +canne à pêche
+ilot des pirates: +violon&machette
+cale: !attente
+ps1:
+rocher de la tortue: ?canne à pêche => +rhum
+
+# NOEUDS PAGE 4
+jungle:
+jungle profonde: +symbole coffre
+campement des indigènes:
+tente du chef: ?enceinte => +flute
+tipis:
+grand totem:
+baobab: +machette
+cabane perchée: +ration
+infirmerie: +flechette
+horizon: ?ration => +corde&rhum
