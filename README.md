@@ -48,7 +48,7 @@ Pour visualiser l'ensemble des possibilités d'actions offertes par ce jeu de pi
 ![graphe-possibilités](game_graph/graph.png)
 
 ### Traduction du graphe des possibilités en un problème PDDL
-Le script python `graph_to_pddl` permet de convertir le graphe décrit dans les deux fichiers `game_graph/graph-node-list.txt` et `game_graph/graph-edge-list.txt` en un problème pddl `game_pddl/problem.pddl`.
+Le script python `graph_to_pddl.py` permet de convertir le graphe décrit dans les deux fichiers `game_graph/graph-node-list.txt` et `game_graph/graph-edge-list.txt` en un problème pddl `game_pddl/problem.pddl`.
 
 Le fichier `domain.pddl` a été écrit manuellement et contient l'encodage en PDDL des actions réalisable par le joueur, peut importe les liens liant les balises entre elles.
 
