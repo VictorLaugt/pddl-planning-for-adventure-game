@@ -1,6 +1,6 @@
 # Utilisation d'un planifieur PDDL pour résoudre un jeu de piste
 
-J'ai été moniteur dans une colonie de vacances et j'ai créé un jeu de piste scnénarisé pour les enfants dont je m'occupait.
+J'ai été moniteur dans une colonie de vacances et j'ai créé un jeu de piste scénarisé pour les enfants dont je m'occupais.
 
 ## Présentation du jeu de piste
 
@@ -11,7 +11,7 @@ Les règles sont les suivantes:
 
 - À chaque balise, il est possible:
   - de ramasser les objets présents à la balise
-  - d'utilser des objets que l'on possède pour en obtenir un nouveau
+  - d'utiliser des objets que l'on possède pour en obtenir un nouveau
   - de se déplacer vers les balises voisines si l'on a les objets nécessaires
 
 ### Exemple de chemin emprunté
@@ -27,7 +27,7 @@ Au puits, l'équipe se déplace vers le fond du puits en utilisant la corde
 ![image-balise-fond-du-puits](game_node_examples/05-fond-du-puits.png)
 
 ### Problématique
-Le but de ce projet est d'utiliser un planifieur PDDL pour vérifier s'il est effectivement possible de terminier ce jeu de piste.
+Le but de ce projet est d'utiliser un planifieur PDDL pour vérifier s'il est effectivement possible de terminer ce jeu de piste.
 Autrement dit, on cherche à vérifier qu'il existe une séquence d'actions (déplacement, collecte d'objets, fabrication d'objets) permettant au joueur de se rendre à la balise du bunker en partant de la balise du feu de camp.
 
 ## Modélisation du problème
@@ -50,10 +50,10 @@ Pour visualiser l'ensemble des possibilités d'actions offertes par ce jeu de pi
 ### Traduction du graphe des possibilités en un problème PDDL
 Le script python `graph_to_pddl.py` permet de convertir le graphe décrit dans les deux fichiers `game_graph/graph-node-list.txt` et `game_graph/graph-edge-list.txt` en un problème pddl `game_pddl/problem.pddl`.
 
-Le fichier `domain.pddl` a été écrit manuellement et contient l'encodage en PDDL des actions réalisable par le joueur, peut importe les liens liant les balises entre elles.
+Le fichier `domain.pddl` a été écrit manuellement et contient l'encodage en PDDL des actions réalisable par le joueur, peu importe les liens liant les balises entre elles.
 
 ## Résultat
-En exécutant le plannifieur PDDL avec la commande `python -B -m pddl-parser.pddl_parser.planner game_pddl/domain.pddl game_pddl/problem.pddl` pendant moins d'une seconde, on se rend compte qu'il existe une manière très rapide de gagner, impliquant seulement 16 actions dont 14 déplacements:
+En exécutant le planifieur PDDL avec la commande `python -B -m pddl-parser.pddl_parser.planner game_pddl/domain.pddl game_pddl/problem.pddl` pendant moins d'une seconde, on se rend compte qu'il existe une manière très rapide de gagner, impliquant seulement 16 actions dont 14 déplacements:
 ```
 Time: 70.47132897377014s
 plan:
@@ -75,11 +75,11 @@ move_using p riviere conduit_d_aeration flute
 move p conduit_d_aeration bunker
 ```
 
-Cependant, le jeu de piste a été conçu de sorte qu'il existe de nombreuses manières différentes de gagner, faisant passer le joueur par d'autre balises et lui racontant donc des histoires différentes.
+Cependant, le jeu de piste a été conçu de sorte qu'il existe de nombreuses manières différentes de gagner, faisant passer le joueur par d'autres balises et lui racontant donc des histoires différentes.
 
 Pour tester si d'autres solutions sont bien réalisables par le joueur, on enlève la possibilité de ramasser "l'enceinte portable connectée" au "sentier".
-Ceci empèche de l'utiliser à la "tente du chef des indigènes" pour obtenir la "flute" permettant ensuite de charmer le serpent bloquant l'entrée du "conduit d'aération" qui mène au "bunker".
-En ajoutant cette contrainte, voici la meilleure suite d'action trouvée par le plannifieur PDDL, contenant 21 actions dont 19 déplacements:
+Ceci empêche de l'utiliser à la "tente du chef des indigènes" pour obtenir la "flute" permettant ensuite de charmer le serpent bloquant l'entrée du "conduit d'aération" qui mène au "bunker".
+En ajoutant cette contrainte, voici la meilleure suite d'action trouvée par le planifieur PDDL, contenant 21 actions dont 19 déplacements:
 ```
 Time: 192.0815737247467s
 plan:
@@ -106,7 +106,7 @@ move p atelier porte_principale
 move_using p porte_principale bunker pelle
 ```
 
-En enlevant aussi la possibilité de ramasser la "pelle" au fond de la mine, le planner PDDL trouve cette solution, contenant 22 actions dont 18 déplacements:
+En enlevant aussi la possibilité de ramasser la "pelle" au fond de la mine, le planifieur PDDL trouve cette solution, contenant 22 actions dont 18 déplacements:
 ```
 Time: 241.09312343597412s
 plan:
