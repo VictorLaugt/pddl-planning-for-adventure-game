@@ -1,6 +1,6 @@
 # Utilisation d'un planifieur PDDL pour résoudre un jeu de piste
 
-J'ai été moniteur dans une colonie de vacances et j'ai créé un jeu de piste scénarisé pour les enfants dont je m'occupais.
+J'ai été moniteur dans une colonie de vacances et nous avons créé un jeu de piste scénarisé pour les enfants dont nous nous occupions.
 
 ## Présentation du jeu de piste
 
