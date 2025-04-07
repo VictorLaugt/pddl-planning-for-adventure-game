@@ -39,7 +39,7 @@ Par exemples:
 - `atelier: ?corde&voile => +parapente` veut dire que "l'atelier" est une balise à laquelle le joueur a le droit de construire un "parapente" s'il possède une "corde" et une "voile".
 - `riviere:` veut dire que la "rivière" est une balise à laquelle on ne trouve aucun objet.
 
-Le fichier `game_graph/graph-edge-list.txt` contient la liste des conections reliant les balises entre elles.
+Le fichier `game_graph/graph-edge-list.txt` contient la liste des connexions reliant les balises entre elles.
 Par exemples:
 - `rivière, pied du volcan` veut dire que le joueur a le droit de se rendre au "pied du volcan" depuis la "rivière".
 - `sommet du volcan, ilot des pirates: ?parapente` veut dire que le joueur a le droit de se rendre sur "l'ilot des pirates" depuis le "sommet du volcan" à condition qu'il possède un "parapente".
