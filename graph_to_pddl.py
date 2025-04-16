@@ -11,8 +11,8 @@ if TYPE_CHECKING:
 
 TRANSLATION_TABLE = {
     ord(' '): '_', ord("'"): '_',
-    ord('é'): 'e', ord('è'): 'e',
-    ord('à'): 'a'
+    ord('é'): 'e', ord('è'): 'e', ord('ê'): 'e',
+    ord('â'): 'a', ord('à'): 'a'
 }
 def to_object_name(string: str) -> str:
     return string.strip().translate(TRANSLATION_TABLE)
