@@ -50,7 +50,9 @@ Pour visualiser l'ensemble des possibilités d'actions offertes par ce jeu de pi
 ### Traduction du graphe des possibilités en un problème PDDL
 Le script python `graph_to_pddl.py` est un petit compilateur qui permet de convertir le graphe décrit dans les deux fichiers `game_graph/graph-node-list.txt` et `game_graph/graph-edge-list.txt` en un problème pddl `game_pddl/problem.pddl`.
 
-Le fichier `game_pddl/domain.pddl` a été écrit manuellement et contient l'encodage en PDDL des actions réalisables par le joueur, peu importe les liens liant les balises entre elles.
+Le fichier `game_pddl/domain.pddl` a été écrit manuellement et contient la description en langage PDDL des actions réalisables par le joueur dans un jeu de piste de ce type, peu importe les liens liant les balises entre elles.
+
+Si l'on veut changer l'histoire du jeu ou son terrain, il est seulement nécessaire de modifier les deux fichiers du dossier `game_graph/`. Il suffit ensuite de les compiler en un nouveau problème `game_pddl/problem.pddl`, et on peut utiliser le même domaine `game_pddl/domain.pddl` comme formalisation des règles du jeu.
 
 ## Résultat
 En exécutant le planifieur PDDL avec la commande `python -B -m pddl-parser.pddl_parser.planner game_pddl/domain.pddl game_pddl/problem.pddl` pendant 70 secondes, on se rend compte qu'il existe une manière très rapide de gagner, impliquant seulement 16 actions dont 14 déplacements:
